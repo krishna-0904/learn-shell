@@ -8,5 +8,5 @@ sleep 10
 END_TIME=$(date +%s)
 echo "script ended execution at: $END_TIME"
 
-
-echo "Total time taken: " 
+TOTAL_TIME=$((END_TIME - START_TIME))
+echo "Total time taken: $((END_TIME - START_TIME)) "
