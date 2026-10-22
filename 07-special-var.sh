@@ -11,3 +11,4 @@ echo "Who is running current script: $USER"
 echo "Directory of the current script: $PWD"
 echo "Home directory of current user: $HOME"
 echo "PID of current script: $$"
+sleep 10 &
