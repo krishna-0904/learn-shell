@@ -13,3 +13,6 @@ echo "Count is: $COUNT"
 FRUITS=("Apple" "Banana" "Mango" "Grapes") #This is an array 
 echo "Fruits are: ${FRUITS[@]}"
 echo "First fruit is: ${FRUITS[0]}"
+
+name="krishna"
+echo "${name} prabhas"
