@@ -11,4 +11,4 @@ COUNT=COUNT+1 #incrementing the value of COUNT by 1
 echo "Count is: $COUNT"
 
 FRUITS=("Apple" "Banana" "Mango" "Grapes") #This is an array 
-echo "Fruits are: $FRUITS[@]"
+echo "Fruits are: ${FRUITS[@]}"
