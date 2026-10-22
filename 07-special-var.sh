@@ -12,3 +12,8 @@ echo "Directory of the current script: $PWD"
 echo "Home directory of current user: $HOME"
 echo "PID of current script: $$"
 sleep 10 &
+echo "PID of last background process: $!"
+wait $! #scripts waits until $! process is completed
+echo "Line number: $LINENO"
+echo "previous command exit status: $?"
+echo "Total time executed for this script: $SECONDS"
