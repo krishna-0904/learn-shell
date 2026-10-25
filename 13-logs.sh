@@ -11,7 +11,7 @@ if [ $user_id -ne 0 ]; then
 fi
 
 mkdir -p $logs_folder
-echo "Script execution started at $(date +"%F %T")"
+echo "Script execution started at $(date +"%F %T")" &>> $logs_file
 
 validate() {
     if [ $1 -ne 0 ]; then 
@@ -30,4 +30,4 @@ validate $? "nginx installation"
 dnf install mysql -y &>> $logs_file
 validate $? "mysql client installation"
 
-echo "Script execution completed at $(date +"%F %T")"
+echo "Script execution completed at $(date +"%F %T")" &>> $logs_file
