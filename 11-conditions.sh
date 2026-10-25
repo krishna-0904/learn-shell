@@ -7,6 +7,8 @@ if [ $user_id -ne 0 ]; then
     exit 1
 fi
 
+
+
 echo "proceding...."
 dnf install nginx -y
 
