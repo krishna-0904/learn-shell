@@ -33,3 +33,5 @@ do
         echo "${package} is already installed...skipping"
     fi
 done
+
+echo "Script execution completed at $(date +"%F %T")" &>> $logs_file
