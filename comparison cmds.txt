@@ -23,3 +23,8 @@
 -s   = File exists and is not empty
 
 # Example: If Condition
+
+sudo dnf remove nginx nginx-core nginx-filesystem redhat-logos-httpd -y
+sudo dnf remove mysql mysql-common mariadb-connector-c-config -y
+sudo dnf autoremove -y
+sudo dnf clean all
