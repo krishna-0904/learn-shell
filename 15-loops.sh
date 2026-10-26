@@ -35,3 +35,5 @@ do
 done
 
 echo "Script execution completed at $(date +"%F %T")" &>> $logs_file
+
+#cat $logs_file
