@@ -19,10 +19,10 @@ echo "Script execution started at $(date +"%F %T")" &>> $logs_file
 
 validate() {
     if [ $1 -ne 0 ]; then 
-        echo "${2} ${R}failed...${N}" | tee -a $logs_file
+        echo "${2} ${R}failed${N}" | tee -a $logs_file
         exit 1
     else
-        echo "${2} ${G}successful...${N}" | tee -a $logs_file
+        echo "${2} ${G}successful${N}" | tee -a $logs_file
     fi
 }
 
