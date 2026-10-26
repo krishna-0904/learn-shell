@@ -6,7 +6,6 @@ logs_file="${logs_folder}/${0}.log"
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
-B="\e[34m"
 N="\e[0m"
 
 
@@ -20,10 +19,10 @@ echo "Script execution started at $(date +"%F %T")" &>> $logs_file
 
 validate() {
     if [ $1 -ne 0 ]; then 
-        echo "${2} ${R}failed${N}" | tee -a $logs_file
+        echo -e "${2} ${R}failed${N}" | tee -a $logs_file
         exit 1
     else
-        echo "${2} ${G}successful${N}" | tee -a $logs_file
+        echo -e"${2} ${G}successful${N}" | tee -a $logs_file
     fi
 }
 
@@ -35,7 +34,7 @@ do
         dnf install ${package} -y &>> $logs_file
         validate $? "Installing ${package}"
     else 
-        echo "${package} is already installed...${Y}SKIPPING${N}"
+        echo -e "${package} is already installed...${Y}SKIPPING${N}"
     fi
 done
 
